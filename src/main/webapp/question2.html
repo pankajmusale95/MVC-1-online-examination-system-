@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Online Examination System</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Bootstrap CSS -->
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+	crossorigin="anonymous">
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+	crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script
+	src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<script>
+
+function validateForm(theForm){
+
+if(theForm.quest.value==""){
+//Please enter username
+alert("Please enter Question.");
+theForm.quest.focus();
+return false;
+}
+
+return true;
+} 
+</script>
+<style>
+.container {
+  background: #f2f4f8;
+  
+  align-items: center;
+  flex-wrap: wrap;
+font-family: "Open Sans";
+}
+#ques{
+background: #f2f4f8;
+   display: flex;
+  justify-content: space-around; 
+  align-items: center;
+  flex-wrap: wrap;
+font-family: "Open Sans";
+  font-size:19px;
+  line-height: 2.0;
+  
+
+}
+#menu{
+background: #f2f4f8;
+  align-items: center;
+   font-family: "Open Sans";
+  font-size:19px;
+  padding:50px;
+
+
+}
+
+
+</style>
+
+</head>
+<body >
+<marquee>
+		<h1>Student Section</h1>
+	</marquee>
+<div id="main"class="container" >
+		<div class="container">
+			<div
+				style="margin-left: 0px; margin-bottom: 0px; text-align: center;">
+				<img src="resources//img//logo.jfif"
+					style="width: 100px; margin-bottom: 15px">
+					
+				<h2>Online Examination System</h2>
+					
+			</div>
+		</div>
+			
+
+</div>
+<div id="menu" class="container" style="text-align: center;background-image: linear-gradient(to right, #1c87c9, #8ebf42); ">
+<h3>IT Vedant</h3>
+
+<h4 style="margin-top:50px">Post Graduation Examination-2022</h4>
+       
+<div class="container"style="background-image: linear-gradient(to right, #1c87c9, #8ebf42);margin-top:30px;">
+  <div class="row">
+    <div class="col-6"><p> Subject : Core Java</p></div>
+    <div class="col-6"><p> Maximum Marks : 10</p></div>
+  </div>
+  </div>
+  <div class="container" style="background-image: linear-gradient(to right, #1c87c9, #8ebf42);">
+  <div class="row">
+    <div class="col-6">
+    <p> Current Date :
+    
+     <script>
+           date = new Date().toLocaleDateString();
+            document.write(date);
+     </script>
+</p>
+    
+    </div>
+    <div class="col-6">
+    <p>Current Time: <span id="datetime"></span>
+<script>
+var dt = new Date();
+document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
+</script>
+    </p>
+    </div>
+  </div>
+  </div>
+  
+
+</div>
+<div id="ques" class="container" style="background-image: linear-gradient(to right, #1c87c9, #8ebf42);">
+
+
+<form method="post" action="question2servelt" style="margin-top:50px;" >
+Q1.<label>HTML stands for ?</label><br>
+a.<input type="radio" name="q1" value="a">HighText Machine Language<br>
+b.<input type="radio" name="q1" value="b">HyperText and links Markup Language<br>
+c.<input type="radio" name="q1" value="c">HyperText Markup Language<br>
+d.<input type="radio" name="q1" value="d">None of these<br>
+<br><br>
+
+Q2.<label>Which of the following element is responsible for making the text bold in HTML?</label><br>
+a.<input type="radio" name="q2" value="a">pre<br>
+b.<input type="radio" name="q2" value="b">a<br>
+c.<input type="radio" name="q2" value="c">b<br>
+d.<input type="radio" name="q2" value="d">br<br>
+<br><br>
+Q3.<label>The correct sequence of HTML tags for starting a webpage is -?</label><br>
+a.<input type="radio" name="q3" value="a">Head, Title, HTML, body<br>
+b.<input type="radio" name="q3" value="b"> HTML, Body, Title, Head<br>
+c.<input type="radio" name="q3" value="c">HTML, Head, Title, Body<br>
+d.<input type="radio" name="q3" value="d">HTML, Head, Title, Body<br>
+<br><br>
+
+Q4.<label>The hr tag in HTML is used for -</label><br>
+a.<input type="radio" name="q4" value="a">new line<br>
+b.<input type="radio" name="q4" value="b">vertical ruler<br>
+c.<input type="radio" name="q4" value="c">new paragraph<br>
+d.<input type="radio" name="q4" value="d">horizontal ruler<br>
+<br><br>
+
+Q5.<label> Which of the following attribute is used to provide a unique name to an element?</label><br>
+a.<input type="radio" name="q5" value="a">class<br>
+b.<input type="radio" name="q5" value="b">id<br>
+c.<input type="radio" name="q5" value="c">type<br>
+d.<input type="radio" name="q5" value="d">None of the above<br>
+<br><br>
+
+Q6.<label>  What are the types of unordered or bulleted list in HTML?</label><br>
+a.<input type="radio" name="q6" value="a">disc, square, triangle<br>
+b.<input type="radio" name="q6" value="b">polygon, triangle, circle<br>
+c.<input type="radio" name="q6" value="c">disc, circle, square<br>
+d.<input type="radio" name="q6" value="d">All of the above<br>
+<br><br>
+
+Q7.<label>Which of the following HTML attribute is used to define inline styles?</label><br>
+a.<input type="radio" name="q7" value="a">style<br>
+b.<input type="radio" name="q7" value="b"> type<br>
+c.<input type="radio" name="q7" value="c"> class<br>
+d.<input type="radio" name="q7" value="d">None of the above<br>
+<br><br>
+
+Q8.<label>An HTML program is saved by using the ____ extension.?</label><br>
+a.<input type="radio" name="q8" value="a">.ht<br>
+b.<input type="radio" name="q8" value="b">.html<br>
+c.<input type="radio" name="q8" value="c">.hml<br>
+d.<input type="radio" name="q8" value="d">None of the above<br>
+<br><br>
+
+Q9.<label>A program in HTML can be rendered and read by -</label><br>
+a.<input type="radio" name="q9" value="a">Web browser<br>
+b.<input type="radio" name="q9" value="b">Server<br>
+c.<input type="radio" name="q9" value="c">Interpreter<br>
+d.<input type="radio" name="q9" value="d">None of the above<br>
+<br><br>
+
+Q10.<label>The tags in HTML are -</label><br>
+a.<input type="radio" name="q10" value="a">case-sensitive<br>
+b.<input type="radio" name="q10" value="b">in upper case<br>
+c.<input type="radio" name="q10" value="c">not case sensitive<br>
+d.<input type="radio" name="q10" value="d">in lowercase<br>
+<br><br>
+
+<input type="submit" value="Submit" style="padding-left:10px;padding-right:10px;background-color:green;">&nbsp
+<input type="reset" value="Reset" style="margin-bottom:60px;padding-left:10px;padding-right:10px;background-color:green;">
+
+
+
+</form>
+
+</div>
+</body>
+
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Online Examination System</title>
+<style>
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #6abadeba;
+	font-family: 'Arial';
+}
+
+.delete {
+	width: 382px;
+	overflow: hidden;
+	margin: auto;
+	margin: 20 0 0 450px;
+	padding: 80px;
+	background: #23463f;
+	border-radius: 15px;
+}
+
+h1 {
+	text-align: center;
+	color: black;
+	padding: 20px;
+}
+
+label {
+	color: #08ffd1;
+	font-size: 17px;
+}
+
+#Uname {
+	width: 300px;
+	height: 30px;
+	border: none;
+	border-radius: 3px;
+	padding-left: 8px;
+}
+
+#Pass {
+	width: 300px;
+	height: 30px;
+	border: none;
+	border-radius: 3px;
+	padding-left: 8px;
+}
+
+#log {
+	width: 300px;
+	height: 30px;
+	border: none;
+	border-radius: 17px;
+	padding-left: 7px;
+	color: red;
+}
+
+span {
+	color: white;
+	font-size: 17px;
+}
+
+a {
+	float: right;
+	background-color: grey;
+}
+</style>
+</head>
+<body>
+	<h1>
+		<marquee>Delete Student Details</marquee>
+	</h1>
+	<br>
+	<div class="delete">
+
+
+		<form action="deletestudentser" method="post">
+			<label><b>Student ID </b> </label> <input type="text"
+				name="delete" id="Uname"> <br> <br> <br> <br>
+			<input type="submit" name="log" id="log" value="Delete"> <br>
+			<br>
+
+		</form>
+	</div>
+
+</body>
+</html>
